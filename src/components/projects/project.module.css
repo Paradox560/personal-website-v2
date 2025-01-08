@@ -1,0 +1,98 @@
+.projectsContainer {
+    display: grid;
+    grid-template-columns: 1fr; /* Changed to one column */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    background: rgb(250, 250, 250);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 4px 4px 6px gray;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.imageContainer {
+    flex: 1;
+    max-width: 50%;
+    overflow: hidden;
+    border-right-color: black;
+    height: 100%;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    flex: 2;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h3 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: left;
+}
+
+.content p {
+    margin: 0 0 1rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill {
+    background: #f0f0f0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.link {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.link:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .card {
+    flex-direction: column;
+    }
+
+    .imageContainer {
+    max-width: 100%;
+    }
+}

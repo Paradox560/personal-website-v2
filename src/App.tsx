@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import About from './components/about';
+import About from './components/about/about';
+import Project from './components/projects/project';
 
 function App() {
   return (
@@ -20,7 +21,12 @@ function App() {
           Learn React
         </a>
       </header>
-      <About />
+      <section id="about" className="about section">
+        <About />
+      </section>
+      <section id="projects" className="projects section">
+        <Project />
+      </section>
     </div>
   );
 }
