@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import About from './components/about/about';
 import Project from './components/projects/project';
+import Experience from './components/experience/experience';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
       </section>
       <section id="projects" className="projects section">
         <Project />
+      </section>
+      <section id="experiences" className="experiences section">
+        <Experience />
       </section>
     </div>
   );

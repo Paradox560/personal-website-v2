@@ -33,7 +33,7 @@ const projects: ProjectInfo[] = [
         { name: "Hackathon Submission", url: "https://devpost.com/software/all-thyme-recipes"},
         { name: "GitHub", url: "https://github.com/Paradox560/all-thyme-recipes"}
     ],
-    skills: ["React", "Next.js", "Gemini", "Firebase", "Material UI", "Vercel"]
+    skills: ["React", "Next.js", "Gemini", "Firebase", "Material UI", "Clerk", "Vercel"]
   },
   {
     title: "ProJourney",
@@ -41,7 +41,8 @@ const projects: ProjectInfo[] = [
     image: "/projects/projourney.png",
     links: [
         { name: "Live Demo", url: "https://projourney.pro/" },
-        { name: "GitHub", url: "https://github.com/karla-zamora/ProJourney"}
+        { name: "GitHub", url: "https://github.com/karla-zamora/ProJourney" },
+        { name: "Video Demo", url: "https://www.youtube.com/watch?v=JHTNLbtLkgE"}
     ],
     skills: ["React", "Next.js", "Gemini", "Firebase", "Material UI", "Vercel"]
   },
@@ -53,7 +54,7 @@ const projects: ProjectInfo[] = [
         { name: "Live Demo", url: "https://flashcardsaas-mu.vercel.app/" },
         { name: "GitHub", url: "https://github.com/jballo/flashcardsaas"}
     ],
-    skills: ["React", "Next.js", "Gemini", "Firebase", "Material UI", "Vercel"]
+    skills: ["React", "Next.js", "Gemini", "Firebase", "Clerk", "Stripe", "Vercel"]
   },
   {
     title: "PerLoan",
