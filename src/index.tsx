@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import 'uikit/dist/css/uikit.min.css';
 import 'uikit/dist/js/uikit.min.js';
 import 'uikit/dist/js/uikit-icons.min.js';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

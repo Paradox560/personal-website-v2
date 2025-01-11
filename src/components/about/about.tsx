@@ -12,7 +12,7 @@ const About = () => {
           />
         </div>
         <div className={styles.textContent}>
-          <h1>About Me</h1>
+          <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">About Me</h1>
           <p>
             Hello! I'm a passionate software developer with a keen interest in building
             elegant solutions to complex problems. With experience in modern web

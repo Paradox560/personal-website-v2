@@ -4,6 +4,8 @@ import './App.css';
 import About from './components/about/about';
 import Project from './components/projects/project';
 import Experience from './components/experience/experience';
+import Certificate from './components/certificates/certificates';
+import SimpleSlider from './components/simple-slider';
 
 function App() {
   return (
@@ -25,12 +27,19 @@ function App() {
       <section id="about" className="about section">
         <About />
       </section>
+      <hr className="uk-divider-icon" />
       <section id="projects" className="projects section">
         <Project />
       </section>
+      <hr className="uk-divider-icon" />
       <section id="experiences" className="experiences section">
         <Experience />
       </section>
+      <hr className="uk-divider-icon" />
+      <section id="certificates" className="certificates section">
+        <Certificate />
+      </section>
+      <hr className="uk-divider-icon" />
     </div>
   );
 }

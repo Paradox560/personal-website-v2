@@ -1,0 +1,53 @@
+.certificate-carousel {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.certificate-item {
+    text-align: center;
+}
+
+.certificate-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.certificate-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.certificate-caption {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.certificate-link {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.certificate-link:hover {
+    text-decoration: underline;
+}
+
+.certificate-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.certificate-line {
+    width: 4px;
+    height: 50px;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+.certificate-info {
+    text-align: left;
+}
