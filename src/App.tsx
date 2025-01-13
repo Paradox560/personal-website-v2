@@ -5,12 +5,12 @@ import About from './components/about/about';
 import Project from './components/projects/project';
 import Experience from './components/experience/experience';
 import Certificate from './components/certificates/certificates';
-import SimpleSlider from './components/simple-slider';
+import Navbar from './components/navbar'; // Import Navbar
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -23,7 +23,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <Navbar /> {/* Add Navbar */}
       <section id="about" className="about section">
         <About />
       </section>

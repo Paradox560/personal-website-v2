@@ -8,6 +8,8 @@ import 'uikit/dist/js/uikit.min.js';
 import 'uikit/dist/js/uikit-icons.min.js';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
