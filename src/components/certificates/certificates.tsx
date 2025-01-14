@@ -30,6 +30,18 @@ const certificates: CertificateInfo[] = [
         url: "https://verify.openedg.org/?id=Pi1c.U1LB.ZmGO"
     },
     {
+        image: "/certifications/HPTV-Externship.png",
+        title: "HP Tech Ventures Externship",
+        caption: "This certificate is awarded to those who have completed Harvard's CS50X: Introduction to Computer Science course.",
+        url: "https://verify.openedg.org/?id=Pi1c.U1LB.ZmGO"
+    },
+    {
+        image: "/certifications/Stanford106A.png",
+        title: "Stanford CS106A: Code In Place",
+        caption: "This certificate is awarded to those who have completed Harvard's CS50X: Introduction to Computer Science course.",
+        url: "https://verify.openedg.org/?id=Pi1c.U1LB.ZmGO"
+    },
+    {
         image: "/certifications/CS50x.png",
         title: "Harvard CS50X: Introduction to Computer Science",
         caption: "This certificate is awarded to those who have completed Harvard's CS50X: Introduction to Computer Science course.",
@@ -108,7 +120,7 @@ const Certificate = () => {
                             <div className="certificate-info">
                                 <h3 className="uk-margin-remove">{certificate.title}</h3>
                                 <p className="uk-margin-remove">{certificate.caption}</p>
-                                <a href={certificate.url} target="_blank" rel="noopener noreferrer" className="uk-button uk-button-text">View Certificate</a>
+                                {certificate.url && <a href={certificate.url} target="_blank" rel="noopener noreferrer" className="uk-button uk-button-text">View Certificate</a>}
                             </div>
                         </div>
                     </div>
