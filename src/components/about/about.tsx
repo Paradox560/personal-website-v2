@@ -7,7 +7,7 @@ const About = () => {
         <div className={styles.imageWrapper}>
           <img
             src="/headshot.jpg"
-            alt="Pranav Palle Image"
+            alt="Pranav Palle"
             className={styles.headshot}
           />
         </div>
