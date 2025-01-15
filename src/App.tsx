@@ -5,7 +5,6 @@ import About from './components/about/about';
 import Project from './components/projects/project';
 import Experience from './components/experience/experience';
 import Certificate from './components/certificates/certificates';
-import SimpleSlider from './components/simple-slider';
 
 function App() {
   return (
