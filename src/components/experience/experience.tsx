@@ -1,40 +1,58 @@
 import './experience.css';
 
 type ExperienceInfo = {
+  image: string;
   title: string;
   date: string;
-  description: string;
+  description: string[];
   company: string;
   link: string;
 };
 
 const experiences: ExperienceInfo[] = [
   {
+    image: "/experience/umdcs.png",
     title: "Undergraduate Teaching Assistant",
     date: "Aug 2024 - Present",
-    description: "Built responsive user interfaces with HTML, CSS, and JavaScript.",
+    description: [
+      "• Taught and curated Java programming concepts and guided them on learning different concepts during office hours",
+      "• Graded quizzes, projects, and exams of around 200+ students giving helpful feedback on mistakes and methods to improve",
+    ],
     company: "University of Maryland Department of Computer Science",
     link: "https://undergrad.cs.umd.edu/teaching-assistants"
   },
   {
+    image: "/experience/inovalon.png",
     title: "Software Engineer Intern",
     date: "Jun 2024 - Dec 2024",
-    description: "Developed and maintained web applications using React and Node.js.",
+    description: [
+      "• Created Snowflake SQL tables to query AWS Managed Workflow for Apache Airflow metrics to construct comprehensive Datadog and Power BI dashboards",
+      "• Deployed Airflow code to AWS following CI/CD practices in Azure DevOps to ensure successful integration of DAG changes",
+      "• Worked with over 70 billion data points to create client side Angular UI for dynamic query building based on user specifications",
+      "• Taught company wide Power BI session on conditional formatting and AI tools to help 30+ analysts create more intuitive dashboards"
+    ],
     company: "Inovalon",
     link: "https://www.inovalon.com/"
   },
   {
+    image: "/experience/usnews.png",
     title: "Technical Lead - Contract",
-    date: "Jan 2024 - Jan 2025",
-    description: "Built responsive user interfaces with HTML, CSS, and JavaScript.",
-    company: "US News and World Report",
+    date: "Jan 2024 - Present",
+    description: [
+      "• Unified queried API data to create comprehensive internal QA web application to efficiently validate metric values using time series analysis and machine learning models saving non-technical staff hundreds of hours of manual lookup",
+      "• Bridged knowledge gap between departments by creating easy visual access to PostgreSQL tables of thousands of colleges and metrics ",
+      "• Presented the product at the U.S. News Headquarters to company leadership, including the CTO and lead engineers"
+    ],    company: "US News and World Report",
     link: "https://appdevclub.com/#/project/664d226acc3b67d0b751de0b"
   },
   {
+    image: "/experience/lpf.png",
     title: "Software Engineer - Contract",
     date: "Aug 2024 - Dec 2024",
-    description: "Developed and maintained web applications using React and Node.js.",
-    company: "Hack4Impact-UMD & Leveling the Playing Field",
+    description: [
+      "• Developing inventory management application for a non-profit organization utilizing Salesforce for backend with mobile scalability",
+      "• Collaborated with engineers through the Microsoft Mentorship Program to reduce security risks and achieve greater quality code"
+    ],    company: "Hack4Impact-UMD & Leveling the Playing Field",
     link: "https://umd.hack4impact.org/ourwork/lpf"
   },
 ];
@@ -46,7 +64,7 @@ const Experience = () => {
         {experiences.map((experience, index) => (
           <div key={index} className="uk-timeline-item">
             <div className="uk-timeline-icon">
-              <span className="uk-badge"><span uk-icon="check"></span></span>
+              <img src={experience.image} alt={experience.title} className="experience-icon" />
             </div>
             <div className="uk-timeline-content">
               <div className="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
@@ -60,7 +78,9 @@ const Experience = () => {
                   </div>
                 </div>
                 <div className="uk-card-body uk-text-left">
-                  <p className="uk-text-success">{experience.description}</p>
+                  {experience.description.map((description, index) => (
+                    <p key={index}>{description}</p>
+                  ))}
                 </div>
                 <div className="uk-card-footer">
                   <a href={experience.link} className="uk-button uk-button-text" target="_blank" rel="noopener noreferrer">Learn more</a>

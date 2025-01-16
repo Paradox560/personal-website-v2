@@ -37,18 +37,18 @@ const projects: ProjectInfo[] = [
   },
   {
     title: "ProJourney",
-    description: "MindSpark is a fullstack AI flashcard generation website that makes it easy to generate flashcard sets and save them for further learning.",
+    description: "ProJourney is an AI powered DSA learning platform. We have constructed an AI powered roadmap to recommend problems based on which problems you've already completed to continuously help 30+ waitlist users retain data structure skills. When users complete problems on the page with a functional code editor, they will see feedback about their solution and potentials to improve it.",
     image: "/projects/projourney.png",
     links: [
         { name: "Live Demo", url: "https://projourney.pro/" },
         { name: "GitHub", url: "https://github.com/karla-zamora/ProJourney" },
         { name: "Video Demo", url: "https://www.youtube.com/watch?v=JHTNLbtLkgE"}
     ],
-    skills: ["React", "Next.js", "Gemini", "Firebase", "Material UI", "Vercel"]
+    skills: ["React", "Next.js", "Gemini", "Supabase", "Clerk", "Firebase", "AWS Amplify", "Cloudflare", "LemonSqueezy", "Monaco Code Editor"]
   },
   {
     title: "MindSpark",
-    description: "MindSpark is a fullstack AI flashcard generation website that makes it easy to generate flashcard sets and save them for further learning.",
+    description: "MindSpark is a fullstack AI flashcard generation website that makes it easy to generate flashcard sets and save them for further learning. We integrated Clerk for authentication and Stripe for potential monetization.",
     image: "/projects/mindspark.png",
     links: [
         { name: "Live Demo", url: "https://flashcardsaas-mu.vercel.app/" },
@@ -68,13 +68,22 @@ const projects: ProjectInfo[] = [
   },
   {
     title: "Readanize",
-    description: "Readanize is my final project for CS50X: Harvard's Introduction to Computer Science. It is a web application that helps users organize their reading lists and track their progress.",
+    description: "Readanize is my final project for CS50X: Harvard's Introduction to Computer Science. I constructed a website to document book metrics by storing user information in PHP tables and utilized SQL queries to update data. I also interpreted data transforming user interactions by implementing real-time Flask alerts for book completion milestones",
     image: "/projects/readanize.png",
     links: [
         { name: "Video Demo", url: "https://youtu.be/Y5taFZ5RImM/" },
         { name: "GitHub", url: "https://github.com/me50/Paradox560/tree/cs50/problems/2020/x/project"}
     ],
     skills: ["SQL", "HTML", "Flask", "PHP", "Python"]
+  },
+  {
+    title: "Trading Card Generation",
+    description: "This is a website created by the East Computer Science club board members that will automatically generate random cards based on our own custom algorithms. The application is built using React and integrates with Firebase for data storage.",
+    image: "/projects/checsclub.png",
+    links: [
+      { name: "Live Demo", url: "https://checsclub.web.app/" },
+    ],
+    skills: ["React", "Firebase", "Python", "HTML", "CSS", "Mathematics"]
   }
 ]
 

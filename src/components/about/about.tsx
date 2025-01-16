@@ -14,15 +14,14 @@ const About = () => {
         <div className={styles.textContent}>
           <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">About Me</h1>
           <p>
-            Hello! I'm a passionate software developer with a keen interest in building
-            elegant solutions to complex problems. With experience in modern web
-            technologies, I specialize in creating responsive and user-friendly
-            applications.
+            Hello! I'm an university student and software engineer learning about 
+            web development, data science, robotics, cloud computing, and recently
+            quantum computing.
           </p>
           <p>
-            When I'm not coding, you can find me exploring new technologies,
-            contributing to open-source projects, or sharing knowledge with the
-            developer community.
+            When I'm not coding, you can find me bouldering, playing badminton, 
+            destroying my friends at word based games, and reading about mythology
+            in specific.
           </p>
         </div>
       </div>

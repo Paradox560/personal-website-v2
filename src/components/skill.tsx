@@ -9,7 +9,12 @@ type skill = {
 }
 
 const skillList: skillInfo[] = [
-    
+    {
+        category: "Languages",
+        skills: [
+            
+        ]
+    }
 ]
 
 const Skills = () => {
