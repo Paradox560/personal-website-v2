@@ -37,3 +37,26 @@
     object-fit: cover;
     border: 1px rgb(221, 220, 220) solid;
 }
+
+.uk-timeline .uk-timeline-item .uk-card-header {
+    position: relative;
+}
+
+.uk-timeline .uk-timeline-item .uk-card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .uk-timeline .uk-timeline-item .uk-card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .uk-timeline .uk-timeline-item .uk-card-badge {
+        position: static;
+        margin-top: 10px;
+    }
+}
