@@ -38,7 +38,6 @@ const certificates: CertificateInfo[] = [
         image: "/certifications/Stanford106A.png",
         title: "Stanford CS106A: Code In Place",
         caption: "Awarded to those who have completed Stanford's Code In Place course.",
-        url: "https://verify.openedg.org/?id=Pi1c.U1LB.ZmGO"
     },
     {
         image: "/certifications/CS50x.png",
@@ -111,6 +110,7 @@ const Certificate = () => {
 
     return (
         <div className="certificate-carousel">
+            <h1>Certificates</h1>
             <Slider {...settings}>
                 {certificates.map((certificate, index) => (
                     <div key={index} className="certificate-item">

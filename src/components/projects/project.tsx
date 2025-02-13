@@ -19,14 +19,14 @@ const projects: ProjectInfo[] = [
     description: "Work In Progress: This project is a word games solver that helps users solve word games like Word Hunt, Spelling Bee, and Anagrams. The application is built using Next.js and integrates with a Flask backend to implement a Trie data structure with depth first search to ensure all possible words are found within the list of 370K+ words.",
     image: "/projects/wordgames.png",
     links: [
-        { name: "Live Demo", url: "" },
+        { name: "Live Demo", url: "https://word-games-solver.vercel.app/" },
         { name: "GitHub", url: "https://github.com/Paradox560/wordgames"}
     ],
     skills: ["React", "Next.js", "Flask", "Vercel", "Python"]
   },
   {
-    title: "AllThyme",
-    description: "This project is a recipe generation website that helps users manage their ingredients and spices, and generate recipes based on the available items. The application is built using Next.js and integrates with Firebase for data storage.",
+    title: "AllThyme Recipes",
+    description: "This project is a recipe generation website that helps users manage their ingredients and spices, and generate recipes based on the available items. The application is built using Next.js and integrates with Firebase for data storage. Winner of the 2024 HackUMBC Major League Hackathon Best Environmental Hack and Best GoDaddy Domain Name.",
     image: "/projects/allthyme.png",
     links: [
         { name: "Live Demo", url: "https://allthymerecipes.design/" },
@@ -90,6 +90,7 @@ const projects: ProjectInfo[] = [
 const Project = () => {
   return (
     <div className={styles.projectsContainer}>
+      <h1>Projects</h1>
       {projects.map((project, index) => (
         <div key={index} className={styles.card}>
           <div className={styles.imageContainer}>

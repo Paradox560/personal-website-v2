@@ -10,6 +10,16 @@ type ExperienceInfo = {
 };
 
 const experiences: ExperienceInfo[] = [
+  // {
+  //   image: "/experience/aws.png",
+  //   title: "Incoming Software Development Engineer Intern",
+  //   date: "Summer 2025",
+  //   description: [
+  //     "To be determined"
+  //   ],
+  //   company: "Amazon Web Services (AWS)",
+  //   link: "https://aws.amazon.com/"
+  // },
   {
     image: "/experience/umdcs.png",
     title: "Undergraduate Teaching Assistant",
@@ -60,6 +70,7 @@ const experiences: ExperienceInfo[] = [
 const Experience = () => {
   return (
     <div className="uk-container uk-padding">
+      <h1>Experience</h1>
       <div className="uk-timeline">
         {experiences.map((experience, index) => (
           <div key={index} className="uk-timeline-item">
