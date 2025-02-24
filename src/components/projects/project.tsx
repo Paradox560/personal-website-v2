@@ -16,13 +16,13 @@ type ProjectInfo = {
 const projects: ProjectInfo[] = [
   {
     title: "Word Games Solver",
-    description: "Work In Progress: This project is a word games solver that helps users solve word games like Word Hunt, Spelling Bee, and Anagrams. The application is built using Next.js and integrates with a Flask backend to implement a Trie data structure with depth first search to ensure all possible words are found within the list of 370K+ words.",
+    description: "This project is a word games solver that helps users solve word games like Word Hunt, Spelling Bee, and Anagrams. The application is built using Next.js and integrates with a Flask backend to implement a Trie data structure with depth first search to ensure all possible words are found within the list of 370K+ words.",
     image: "/projects/wordgames.png",
     links: [
         { name: "Live Demo", url: "https://word-games-solver.vercel.app/" },
         { name: "GitHub", url: "https://github.com/Paradox560/wordgames"}
     ],
-    skills: ["React", "Next.js", "Flask", "Vercel", "Python"]
+    skills: ["React", "Next.js", "Flask", "Vercel", "Python", "Data Structures and Algorithms"]
   },
   {
     title: "AllThyme Recipes",

@@ -1,5 +1,5 @@
-const Certificate = () => {
+const Navbar = () => {
     return (<></>);
 }
 
-export default Certificate;
+export default Navbar;
